@@ -1,0 +1,3 @@
+abstract class LevelSevenCubitState{}
+class initialLevelSevenCubitState extends LevelSevenCubitState{}
+class changesevenIndexState extends LevelSevenCubitState{}
