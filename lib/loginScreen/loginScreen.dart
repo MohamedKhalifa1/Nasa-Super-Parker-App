@@ -257,7 +257,10 @@ Column(
 ),
                               Column(
                                 children: [
-                                  TextButton(onPressed: (){}, child: Text('or continue as a guest',style: TextStyle(
+                                  TextButton(onPressed: (){
+                                    Navigator.push(context,MaterialPageRoute(builder: (context)=>HomePage()) );
+
+                                  }, child: Text('or continue as a guest',style: TextStyle(
                                       color: HexColor('5591A9'),
                                       fontSize: 16
                                   ),)),
