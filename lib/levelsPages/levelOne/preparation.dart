@@ -57,8 +57,13 @@ class _LevelOnePreparation extends State<LevelOnePreparation> {
                           backgroundColor: Color(0xff054569),
 
                           child:CircleAvatar(
-                            radius: 37,
-                            backgroundColor:Color(0xff054569),
+                              radius: 37,
+                              backgroundColor:Colors.white,
+                              child:Center(
+                                child: CircleAvatar(
+                                  radius: 37,
+                                  backgroundImage: NetworkImage('https://i.ytimg.com/vi/up8LF24cQC0/hqdefault.jpg'),
+                                ),                            )
                           ) ,
                         ),
                       ),
@@ -214,7 +219,9 @@ class _LevelOnePreparation extends State<LevelOnePreparation> {
                     children: [
                       SizedBox(
                         height: 450,
-                        child: TabBarView(children: [
+                        child: TabBarView(
+                            physics: BouncingScrollPhysics(),
+                            children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [

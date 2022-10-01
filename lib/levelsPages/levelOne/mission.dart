@@ -28,13 +28,18 @@ class LevelOneMission extends StatelessWidget{
                    children: const [
                      Padding(
                        padding: EdgeInsets.only(right: 180,bottom: 20),
-                       child: CircleAvatar(
+                       child:CircleAvatar(
                          radius: 40,
                          backgroundColor: Color(0xff054569),
 
                          child:CircleAvatar(
-                           radius: 37,
-                           backgroundColor:Color(0xff054569),
+                             radius: 37,
+                             backgroundColor:Colors.white,
+                             child:Center(
+                               child: CircleAvatar(
+                                 radius: 37,
+                                 backgroundImage: NetworkImage('https://i.ytimg.com/vi/up8LF24cQC0/hqdefault.jpg'),
+                               ),                            )
                          ) ,
                        ),
                      ),
@@ -200,7 +205,7 @@ child: Column(
     mainAxisAlignment: MainAxisAlignment.end,
     crossAxisAlignment: CrossAxisAlignment.center,
     children: [
-    Image(image: AssetImage('assets/images/ani.gif',),width: 200,height: 200,)
+    Image(image: AssetImage('assets/images/ani.gif',),width: 160,height: 160,)
     ],
     )
   ],

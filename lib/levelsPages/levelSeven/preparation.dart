@@ -48,7 +48,12 @@ class _LevelSevenPreparation extends State<LevelSevenPreparation> {
 
                           child:CircleAvatar(
                             radius: 37,
-                            backgroundColor:Color(0xff054569),
+                            backgroundColor:Colors.white,
+                            child:Center(
+child: CircleAvatar(
+  radius: 37,
+   backgroundImage: NetworkImage('https://i.ytimg.com/vi/up8LF24cQC0/hqdefault.jpg'),
+    ),                            )
                           ) ,
                         ),
                       ),
@@ -204,7 +209,9 @@ class _LevelSevenPreparation extends State<LevelSevenPreparation> {
                     children: [
                       SizedBox(
                         height: 450,
-                        child: TabBarView(children: [
+                        child: TabBarView(
+                            physics: BouncingScrollPhysics(),
+                            children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
